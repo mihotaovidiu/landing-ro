@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cât de aproape ești de plafonul de 100.000 €? Tu și firmele legate, cumulat</title>
+<meta name="description" content="Un singur ecran: distanța până la plafonul micro de 100.000 € și plafonul TVA de 395.000 lei — cumulat pe toate firmele legate, cu alertă push înainte să le depășești.">
+<style>
+  :root {
+    --brand: #1d4ed8;
+    --brand-deep: #1e3a8a;
+    --accent: #d97706;
+    --bg: #f7f8fb;
+    --ink: #171c26;
+    --muted: #5d6675;
+    --card: #ffffff;
+    --warn-bg: #fff8ec;
+    --warn-border: #e8c476;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.55;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 20px; }
+  header {
+    background: linear-gradient(160deg, var(--brand-deep), var(--brand));
+    color: #fff; padding: 56px 0 48px; text-align: center;
+  }
+  header .badge {
+    display: inline-block; font-size: 13px; font-weight: 600;
+    background: rgba(255,255,255,.16); border-radius: 999px;
+    padding: 5px 14px; margin-bottom: 18px; letter-spacing: .02em;
+  }
+  h1 { font-size: clamp(26px, 6vw, 36px); line-height: 1.2; font-weight: 800; }
+  header p.sub { margin-top: 14px; font-size: 17px; opacity: .92; }
+  header .cta {
+    display: inline-block; margin-top: 26px; background: #fff; color: var(--brand-deep);
+    font-weight: 700; font-size: 17px; padding: 14px 28px; border-radius: 12px;
+    text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  }
+  section { padding: 40px 0; }
+  h2 { font-size: 22px; margin-bottom: 18px; }
+  .meter {
+    background: var(--card); border-radius: 16px; padding: 22px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08); margin-bottom: 14px;
+  }
+  .meter .row { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
+  .meter .row strong { font-size: 15px; }
+  .bar { height: 12px; border-radius: 999px; background: #e6e9f0; overflow: hidden; }
+  .bar > div { height: 100%; border-radius: 999px; }
+  .pct { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .steps { display: grid; gap: 14px; }
+  .step {
+    background: var(--card); border-radius: 14px; padding: 18px;
+    display: flex; gap: 14px; align-items: flex-start;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  }
+  .step .n {
+    flex: none; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--brand); color: #fff; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step strong { display: block; margin-bottom: 2px; }
+  .step span { color: var(--muted); font-size: 15px; }
+  .facts { font-size: 14px; color: var(--muted); margin-top: 16px; }
+  .honest {
+    background: var(--warn-bg); border: 1px solid var(--warn-border);
+    border-radius: 14px; padding: 18px; font-size: 15px;
+  }
+  .honest strong { display: block; margin-bottom: 6px; }
+  form {
+    background: var(--card); border-radius: 16px; padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08); display: grid; gap: 12px;
+  }
+  form label { font-size: 14px; font-weight: 600; }
+  form input[type=email], form select {
+    width: 100%; padding: 13px 14px; font-size: 16px;
+    border: 1px solid #ccd3df; border-radius: 10px; background: #fff;
+  }
+  form button {
+    padding: 15px; font-size: 17px; font-weight: 700; color: #fff;
+    background: var(--brand); border: none; border-radius: 12px; cursor: pointer;
+  }
+  form button:active { background: var(--brand-deep); }
+  form .gdpr { font-size: 12px; color: var(--muted); }
+  footer {
+    padding: 28px 0 44px; font-size: 12.5px; color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="badge">Regulile s-au schimbat din nou în februarie 2026 (OUG 8/2026)</div>
+    <h1>Cât de aproape ești de plafonul de 100.000 €?</h1>
+    <p class="sub">Tu <strong>și firmele legate, cumulat</strong>. Un singur ecran, cu alertă push înainte să depășești plafonul micro sau plafonul de TVA de 395.000 lei.</p>
+    <a class="cta" href="#signup">Vreau acces la lansare →</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Așa arată ecranul tău</h2>
+    <div class="meter">
+      <div class="row"><strong>Plafon micro — 100.000 € (509.850 lei)</strong><span>cumulat, 2 firme legate</span></div>
+      <div class="bar"><div style="width:78%; background: var(--accent)"></div></div>
+      <p class="pct">78% · ~112.000 lei rămași · alertă la 80%, 90% și 100%</p>
+    </div>
+    <div class="meter">
+      <div class="row"><strong>Plafon TVA — 395.000 lei</strong><span>SRL Exemplu</span></div>
+      <div class="bar"><div style="width:41%; background: var(--brand)"></div></div>
+      <p class="pct">41% · înregistrarea în scop de TVA se face chiar în ziua depășirii</p>
+    </div>
+    <p class="facts">Dacă deții peste 25% din mai multe firme, veniturile lor se <strong>cumulează</strong> la verificarea plafonului micro — regula care surprinde cei mai mulți antreprenori la final de an, când e prea târziu. Depășirea înseamnă trecerea la impozit pe profit de 16%.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Cum funcționează</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><strong>Conectezi firmele</strong><span>Prin autorizarea SPV / e-Factura pe care o folosești deja — pentru toate firmele în care ai părți sociale.</span></div></div>
+      <div class="step"><div class="n">2</div><div><strong>Calculăm cumulat</strong><span>Venitul facturat pe fiecare firmă și pe grupul de firme legate, raportat la plafoanele în vigoare — actualizate la fiecare schimbare legislativă.</span></div></div>
+      <div class="step"><div class="n">3</div><div><strong>Primești alerta la timp</strong><span>Push la 80%, 90% și înainte de depășire — cu explicația exactă a ce ai de făcut și până când.</span></div></div>
+    </div>
+    <div style="height:18px"></div>
+    <div class="honest">
+      <strong>Ce promitem — și ce nu</strong>
+      Calculele au la bază facturile emise prin e-Factura, deci reflectă venitul <em>facturat</em>, nu încasările în timp real. Nu suntem afiliați ANAF și nu depunem declarații în locul tău — îți spunem devreme și clar unde ești, ca să decizi cu contabilul tău, nu după ce ai depășit.
+    </div>
+  </div>
+</section>
+
+<section id="signup" style="padding-top:0">
+  <div class="wrap">
+    <h2>Primește acces la lansare</h2>
+    <!-- FormSubmit: submissions arrive at the email below; first submission requires one-time activation click. Swap the address + redeploy to change destination. -->
+    <form action="https://formsubmit.co/contact@fakesp.dev" method="POST">
+      <input type="hidden" name="_subject" value="[killtest] Plafon — semnup nou">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://mihotaovidiu.github.io/landing-ro/multumim.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label for="email">Adresa ta de email</label>
+      <input id="email" type="email" name="email" required placeholder="nume@exemplu.ro" autocomplete="email">
+      <label for="firme">Câte firme / PFA-uri ai?</label>
+      <select id="firme" name="firme">
+        <option value="">Alege…</option>
+        <option>1</option>
+        <option>2–3</option>
+        <option>4 sau mai multe</option>
+      </select>
+      <button type="submit">Anunță-mă la lansare</button>
+      <p class="gdpr">Folosim emailul doar ca să te anunțăm la lansare. Fără spam, fără transmitere către terți. Te poți dezabona oricând.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Proiect independent — neafiliat ANAF sau Ministerului Finanțelor.<br>
+    Informațiile afișate sunt calcule informative, nu consultanță fiscală. Deciziile fiscale se iau împreună cu contabilul tău.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verifică-ți factura de prosumator — îți datorează furnizorul bani?</title>
+<meta name="description" content="Fotografiază factura de prosumator. Recalculăm compensarea după noua lege și îți spunem în 60 de secunde dacă furnizorul îți datorează bani.">
+<style>
+  :root {
+    --brand: #0e7a5f;
+    --brand-deep: #0a5c48;
+    --bg: #f6faf8;
+    --ink: #16211d;
+    --muted: #5b6b64;
+    --card: #ffffff;
+    --warn-bg: #fff8ec;
+    --warn-border: #e8c476;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.55;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 20px; }
+  header {
+    background: linear-gradient(160deg, var(--brand-deep), var(--brand));
+    color: #fff; padding: 56px 0 48px; text-align: center;
+  }
+  header .badge {
+    display: inline-block; font-size: 13px; font-weight: 600;
+    background: rgba(255,255,255,.16); border-radius: 999px;
+    padding: 5px 14px; margin-bottom: 18px; letter-spacing: .02em;
+  }
+  h1 { font-size: clamp(26px, 6vw, 36px); line-height: 1.2; font-weight: 800; }
+  header p.sub { margin-top: 14px; font-size: 17px; opacity: .92; }
+  header .cta {
+    display: inline-block; margin-top: 26px; background: #fff; color: var(--brand-deep);
+    font-weight: 700; font-size: 17px; padding: 14px 28px; border-radius: 12px;
+    text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  }
+  section { padding: 40px 0; }
+  h2 { font-size: 22px; margin-bottom: 18px; }
+  .steps { display: grid; gap: 14px; }
+  .step {
+    background: var(--card); border-radius: 14px; padding: 18px;
+    display: flex; gap: 14px; align-items: flex-start;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+  }
+  .step .n {
+    flex: none; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--brand); color: #fff; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step strong { display: block; margin-bottom: 2px; }
+  .step span { color: var(--muted); font-size: 15px; }
+  ul.checks { list-style: none; display: grid; gap: 10px; }
+  ul.checks li {
+    background: var(--card); border-radius: 12px; padding: 14px 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06); font-size: 15px;
+  }
+  ul.checks li::before { content: "✓ "; color: var(--brand); font-weight: 800; }
+  .facts { font-size: 14px; color: var(--muted); margin-top: 16px; }
+  .honest {
+    background: var(--warn-bg); border: 1px solid var(--warn-border);
+    border-radius: 14px; padding: 18px; font-size: 15px;
+  }
+  .honest strong { display: block; margin-bottom: 6px; }
+  form {
+    background: var(--card); border-radius: 16px; padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08); display: grid; gap: 12px;
+  }
+  form label { font-size: 14px; font-weight: 600; }
+  form input[type=email], form select {
+    width: 100%; padding: 13px 14px; font-size: 16px;
+    border: 1px solid #cfd9d4; border-radius: 10px; background: #fff;
+  }
+  form button {
+    padding: 15px; font-size: 17px; font-weight: 700; color: #fff;
+    background: var(--brand); border: none; border-radius: 12px; cursor: pointer;
+  }
+  form button:active { background: var(--brand-deep); }
+  form .gdpr { font-size: 12px; color: var(--muted); }
+  footer {
+    padding: 28px 0 44px; font-size: 12.5px; color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="badge">Din T3 2026 toți prosumatorii trec la decontare lunară</div>
+    <h1>Furnizorul ți-a calculat corect factura de prosumator?</h1>
+    <p class="sub">Fotografiază factura. Recalculăm compensarea după noua lege și îți spunem în <strong>60 de secunde</strong> dacă furnizorul îți datorează bani.</p>
+    <a class="cta" href="#signup">Vreau acces la lansare →</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>De ce acum</h2>
+    <p>Noua lege a prosumatorilor a fost confirmată definitiv de CCR în aprilie 2026. Aproximativ <strong>300.000 de prosumatori</strong> trec în lunile următoare la decontare lunară — iar erorile de facturare din perioadele de tranziție sunt deja documentate: cantități compensate greșit, credit pierdut la reportare, plăți întârziate peste termenul legal de 60 de zile.</p>
+    <p class="facts">Compensarea cantitativă (1 kWh livrat = 1 kWh consumat, până la 200 kW) este garantată prin lege până la 31 decembrie 2030. Furnizorul are obligația legală să răspundă unei contestații în 30 de zile.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Cum funcționează</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><strong>Fotografiezi factura</strong><span>Direct din aplicație — orice factură de prosumator PPC, E.ON, Hidroelectrica sau Electrica.</span></div></div>
+      <div class="step"><div class="n">2</div><div><strong>Recalculăm fiecare rând</strong><span>Energie livrată vs. consumată, cantitatea compensată, creditul reportat, prețul energiei injectate — după regulile în vigoare pentru perioada facturii.</span></div></div>
+      <div class="step"><div class="n">3</div><div><strong>Primești verdictul</strong><span>„Factura e corectă" sau „Furnizorul îți datorează X lei" — plus modelul de contestație gata de trimis.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Ce verificăm</h2>
+    <ul class="checks">
+      <li>Compensarea kWh injectat ↔ kWh consumat aplicată corect</li>
+      <li>Creditul din lunile anterioare reportat fără pierderi</li>
+      <li>Prețul energiei injectate față de referințele publicate</li>
+      <li>Termenul legal de plată de 60 de zile — cu alertă când e depășit</li>
+      <li>Regim vechi vs. regim nou — aplicat corect pentru perioada facturată</li>
+    </ul>
+    <div style="height:18px"></div>
+    <div class="honest">
+      <strong>Ce nu putem verifica (încă) — pe bune</strong>
+      Dacă furnizorul nu a trecut deloc pe factură energia pe care ai injectat-o, acea lipsă nu se vede din fotografie. Pentru asta lucrăm la compararea cu datele invertorului tău. Verificăm matematic tot ce <em>este</em> pe factură — și asta prinde majoritatea erorilor raportate de prosumatori.
+    </div>
+  </div>
+</section>
+
+<section id="signup" style="padding-top:0">
+  <div class="wrap">
+    <h2>Primește acces la lansare</h2>
+    <!-- FormSubmit: submissions arrive at the email below; first submission requires one-time activation click. Swap the address + redeploy to change destination. -->
+    <form action="https://formsubmit.co/contact@fakesp.dev" method="POST">
+      <input type="hidden" name="_subject" value="[killtest] Prosumator — semnup nou">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://mihotaovidiu.github.io/landing-ro/multumim.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label for="email">Adresa ta de email</label>
+      <input id="email" type="email" name="email" required placeholder="nume@exemplu.ro" autocomplete="email">
+      <label for="furnizor">Furnizorul tău</label>
+      <select id="furnizor" name="furnizor">
+        <option value="">Alege…</option>
+        <option>PPC (fost Enel)</option>
+        <option>E.ON / Delgaz</option>
+        <option>Hidroelectrica</option>
+        <option>Electrica Furnizare</option>
+        <option>Alt furnizor</option>
+      </select>
+      <button type="submit">Anunță-mă la lansare</button>
+      <p class="gdpr">Folosim emailul doar ca să te anunțăm la lansare. Fără spam, fără transmitere către terți. Te poți dezabona oricând.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Proiect independent — neafiliat ANRE, ANAF sau vreunui furnizor de energie.<br>
+    Verificarea este un calcul informativ, nu consultanță juridică. Contestația rămâne decizia și semnătura ta.
+  </div>
+</footer>
+
+</body>
+</html>
